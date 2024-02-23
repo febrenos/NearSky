@@ -4,6 +4,7 @@ export const Cards = styled.div`
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap:20px;
+  justify-items: center;
   // place-items: center;
   // padding:  0 0 45px 0;
 

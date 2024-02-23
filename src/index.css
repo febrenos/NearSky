@@ -24,10 +24,24 @@ p{
   color: var(--text-color);
 }
 
+body::-webkit-scrollbar {
+  width: 19px;/* width of the entire scrollbar */
+}
+
+/* body::-webkit-scrollbar-track {
+  background: #c80355;
+} */
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--bg-secondary-color);  /* color of the scroll thumb */
+  border-radius: 20px;          /* roundness of the scroll thumb */
+  border: 4px solid var(--bg-color);  /* creates padding around scroll thumb */
+}
+
 
 :root{
   --primary-color: #42AEEB;
-  --bg-color: #ade4f7;
+  --bg-color: #e8faff;
   --bg-secondary-color: #322d5469;
   --bg-select-color: #fefefe38;
   --bg-hover-color: #fefefe1c;
