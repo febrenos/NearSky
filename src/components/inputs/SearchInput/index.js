@@ -2,12 +2,6 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import * as Styled from './style';
 
-const options = [
-  { label: 'Eventos', value: 'event' },
-  { label: 'Viagens', value: 'travel' },
-  { label: 'Locais', value: 'place' },
-];
-
 //return API
 const Searched = [
   {
@@ -41,6 +35,7 @@ export function SearchInput({placeholder='Add place'}) {
   const handleAddToPlacesRequest = (place) => {
     if (!places.includes(place)) {
       dispatch({ type: 'ADD_PLACES_REQUEST', payload: place });
+      setInputValue('')
       console.log(`"${place}" added`);
     } else {
       console.log(`"${place}" already exist`);

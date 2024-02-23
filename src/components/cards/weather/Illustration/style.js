@@ -1,6 +1,5 @@
 import styled, { keyframes, css } from "styled-components"
 import { Sun, Moon, Star, Cloud, Fog, FogLarge, Snowflake, Thunder, WaterDrop, Ice } from '../../../../assets/imgs/index';
-import { SunnyI, cloudySunI, MoonyI, cloudyMoonI, RainyI, FoggyI, SnowyI, RainyMixI, StormI, ArrowUpI, CloseI } from '../../../../assets/icons/index';
 
 export const IllustrationCard = styled.div`
     width:100%;
@@ -13,19 +12,9 @@ export const Content = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-`
+` 
 
-// Função para extrair apenas números de uma string
-const extractNumber = (str) => {
-    const numbers = str.match(/\d+(\.\d+)?/g);
-    if (numbers) {
-      return numbers.map(num => parseFloat(num) + 5).join('');
-    }
-    return '0';
-  };
-  
-
-  export const SvgBase = styled.div`
+export const SvgBase = styled.div`
   position: absolute;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
   width: auto;
