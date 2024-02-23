@@ -90,13 +90,14 @@ export const ContentIconBefore = styled.div`
 export const ContentIconAfter = styled.div`
     display: flex;
     justify-content: flex-start;
+    gap:3px;
     align-items:center;
     width: 100%;
     height: 100%;
 `;
 
 export const Icon = styled.div`
-    fill: var(--text-color);
+    fill: var(--icon-weather-color);
     width: 24px;
     height: 24px;
 `;

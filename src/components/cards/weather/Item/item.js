@@ -49,11 +49,15 @@ export function WeatherCard({list, bigSizeProp=false}) {
     // type="foggy"
     // type="snow"
     // type="storm"
-
+    var weather;
+    if (list.data[selectedDay].actualWeather !== undefined) {
+        weather = list.data[selectedDay].actualWeather;
+    } else {
+        weather = list.data[selectedDay].forecastWeather;
+    }
     return (
         <>
-        
-                <Styles.Card isShowMore={isShowMore} isDisplayNone={isDisplayNone} weatherType={list.data[selectedDay].actualWeather}>
+                <Styles.Card isShowMore={isShowMore} isDisplayNone={isDisplayNone} weatherType={weather}>
                     <Styles.FlexTitle>
                         {bigSize &&
                             <Styles.ContentIcon onClick={HandleClickShowMore}>
@@ -66,19 +70,19 @@ export function WeatherCard({list, bigSizeProp=false}) {
                         </Styles.ContentClose>
                     </Styles.FlexTitle>
                     
-                    {bigSize && <IllustrationCard type={list.data[selectedDay].actualWeather}/>}
+                    {bigSize && <IllustrationCard type={weather}/>}
                     <Styles.Temperature>
                         <Styles.Before>
                             <Styles.ContentIconBefore>
-                                {list.data[selectedDay].actualWeather ==="sunny" && <Styles.SunnyIcon/>}
-                                {list.data[selectedDay].actualWeather ==="cloudySun" && <Styles.CloudySunIcon/>}
-                                {list.data[selectedDay].actualWeather ==="moony" && <Styles.MoonyIcon/>}
-                                {list.data[selectedDay].actualWeather ==="cloudyMoon" && <Styles.CloudyMoonIcon/>}
-                                {list.data[selectedDay].actualWeather ==="rainy" && <Styles.RainyIcon/>}
-                                {list.data[selectedDay].actualWeather ==="foggy" && <Styles.FoggyIcon/>}
-                                {list.data[selectedDay].actualWeather ==="snow" && <Styles.SnowyIcon/>}
-                                {list.data[selectedDay].actualWeather ==="rainyMix" && <Styles.RainyMixIcon/>}
-                                {list.data[selectedDay].actualWeather ==="storm" && <Styles.StormIcon/>}
+                                {weather ==="sunny" && <Styles.SunnyIcon/>}
+                                {weather ==="cloudySun" && <Styles.CloudySunIcon/>}
+                                {weather ==="moony" && <Styles.MoonyIcon/>}
+                                {weather ==="cloudyMoon" && <Styles.CloudyMoonIcon/>}
+                                {weather ==="rainy" && <Styles.RainyIcon/>}
+                                {weather ==="foggy" && <Styles.FoggyIcon/>}
+                                {weather ==="snow" && <Styles.SnowyIcon/>}
+                                {weather ==="rainyMix" && <Styles.RainyMixIcon/>}
+                                {weather ==="storm" && <Styles.StormIcon/>}
                             </Styles.ContentIconBefore>
                             <Styles.BeforeText>{`${list.data[selectedDay].maxTemperature}°/${list.data[selectedDay].minTemperature}°`}</Styles.BeforeText>
                         </Styles.Before>
@@ -88,7 +92,7 @@ export function WeatherCard({list, bigSizeProp=false}) {
                                     <Styles.RainyIcon/>
                                     <Styles.Text>{`${list.data[selectedDay].rainChance}%`}</Styles.Text>
                                 </Styles.ContentIconAfter>
-                            <Styles.AfterText>{list.data[selectedDay].forecastWeather}</Styles.AfterText>
+                            <Styles.AfterText>{weather}</Styles.AfterText>
                         </Styles.After>
                     </Styles.Temperature>
                     {bigSize &&

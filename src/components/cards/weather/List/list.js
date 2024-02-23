@@ -11,8 +11,8 @@ var placeInfo = [
         data:[
         {
             day: 'Today',
-            forecastWeather: 'sunny',
-            actualWeather: 'foggy',
+            forecastWeather: 'cloudySun',
+            actualWeather: 'sunny',
             actualTemperature:15,
             rainChance:55,
             temperatureData: [20, 22, 24, 26, 28, 30, 28, 20, 18, 17, 15, 15],
