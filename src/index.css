@@ -1,13 +1,45 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition:.5s;
+}
+
+html, html:hover{
+  background-color:var(--bg-color);
+  font-family: system-ui, monospace,'Gill Sans';
+  transition:1s;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'system-ui', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p{
+  color: var(--text-color);
+}
+
+
+:root{
+  --primary-color: #42AEEB;
+  --bg-color: #ade4f7;
+  --bg-secondary-color: #322d5469;
+  --bg-select-color: #fefefe38;
+  --bg-hover-color: #fefefe1c;
+  --text-color: #fcffff;
+  --text-header-color:#2F334F;
+  --text-apresentation-color: #2F334F8C;
+  --text-solid:#5e5e5e;
+  --text-secundary-color: #B9B9B9;/*text, border inputs*/
+  --text-button: #FFFFFF;
+  --solid-color: #f4f4f4;
+  --text-logged-color: rgba(47, 51, 79, 0.55);
+  --button-color: #42AEEB;
+  --bg-theme-color: linear-gradient(180deg, rgba(67, 72, 226, 0.62) 0%, rgba(19, 159, 210, 0.72) 100%);
+  --box-shadow: 15px 15px 30px 0px rgba(0, 0, 0, 0.25);
 }

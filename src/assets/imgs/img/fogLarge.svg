@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+    <defs>
+        <linearGradient id="fogLarge" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color: #bababa" />
+            <stop offset="100%" style="stop-color: #f0faff" />
+        </linearGradient>
+    </defs>
+    <path
+        d="M221-428q-22 0-37.5-15.5T168-481q0-22 15.5-37.5T221-534h518q22 0 37.5 15.5T792-481q0 22-15.5 37.5T739-428H221Z" 
+        style="fill: url(#fogLarge);"
+        />
+</svg>

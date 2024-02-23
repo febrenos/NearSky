@@ -1,0 +1,16 @@
+//https://fonts.google.com/icons?icon.query=progress&icon.style=Rounded
+//https://icons8.com/icons/set/linkedin
+export {ReactComponent as MoonyI} from './icon/moony.svg'
+export {ReactComponent as CloudyMoonI} from './icon/cloudyMoon.svg'
+export {ReactComponent as RainyI} from './icon/rainy.svg'
+export {ReactComponent as SnowyI} from './icon/snowy.svg'
+export {ReactComponent as CloudySunI} from './icon/cloudySun.svg'
+export {ReactComponent as SunnyI} from './icon/sunny.svg'
+export {ReactComponent as ArrowUpI} from './icon/arrowUp.svg'
+export {ReactComponent as CloseI} from './icon/close.svg'
+export {ReactComponent as StormI} from './icon/storm.svg'
+export {ReactComponent as RainyMixI} from './icon/rainyMix.svg'
+export {ReactComponent as FoggyI} from './icon/foggy.svg'
+export {ReactComponent as ResetI} from './icon/reset.svg'
+export {ReactComponent as Search} from './icon/search.svg'
+export {ReactComponent as BigSize} from './icon/bigSize.svg'
