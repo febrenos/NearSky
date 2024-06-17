@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import * as Styled from './style';
 import { WeatherCard } from '../../../index';
-//https://api.hgbrasil.com/stats/weather_cities?key=78g14f59&format=json-cors&sdk_version=hgbrasil
-//https://api.hgbrasil.com/weather/?format=json-cors&key=78g14f59&woeid=455827&sdk_version=js1.0.0
+
 var placeInfo = [
     {
         placeKey:"sp-br",
@@ -15,8 +14,8 @@ var placeInfo = [
             actualWeather: 'sunny',
             actualTemperature:15,
             rainChance:55,
-            temperatureData: [20, 22, 24, 26, 28, 30, 28, 20, 18, 17, 15, 15],
-            precipitationData: [0, 10, 20, 30, 40],
+            temperatureData: [0,0,0,0,0,0,15, 15],
+            precipitationData: [20, 10],
             maxTemperature: 16,
             minTemperature: 11,
         },
@@ -92,7 +91,7 @@ var placeInfo = [
                 actualWeather: 'rainyMix',
                 actualTemperature:10,
                 rainChance:55,
-                temperatureData: [20, 22, 24, 26, 28, 30, 28, 20, 18, 17, 15, 15],
+                temperatureData: [20.2, 22.5, 24.7, 26.9, 28.8, 30.3, 28.1, 20.9, 18.4, 17, 15, 15],
                 precipitationData: [0, 10, 20, 30, 40],
                 maxTemperature: 26,
                 minTemperature: 20,
